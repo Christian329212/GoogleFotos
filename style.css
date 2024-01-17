@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: gray;
+}
+
+.head {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    background-image: url("Flag_of_Romania.svg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgbox {
+    margin: 10px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    box-shadow: 10px 8px 5px black;
+}
+
+.imgbox:hover {
+    opacity: 0.6;
+}
+
+.imgbox img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.single-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+
+.show-image {
+    width: 700px;
+    background-color: black;
+}
+
+.d-none {
+    display: none;
+}
+
+
+.single-image-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: black;
+    margin-top: 0;
+}
+
+.single-image-icon1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin-right: 100px;
+}
+
+.single-image-icon2 {
+   text-align: center;
+   align-items: center;
+   background-color: black;
+}
+
+.single-image-icon3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin-left: 100px;
+}
+
+.icon1 {
+    width: 50px;
+    cursor: pointer;
+}
+
+.icon2 {
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon3 {
+    width: 50px;
+    cursor: pointer;
+}
+
+.single-image-container {
+    display: flex;
+    background-color: black;
+}
+
+@media (max-width: 400px) {
+    .imgbox {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .show-image {
+        width: 300px;
+    }     
+}
+
+@media (max-width: 625px) {
+    .show-image {
+        width: 200px;
+    }   
+    .icon1 {
+        width: 30px;
+    }
+    .icon2 {
+        width: 30px;
+    }
+    .icon3 {
+        width: 30px;
+    }  
+    .single-image-icon1 {
+        margin-right: 15px;
+    }
+    .single-image-icon3 {
+        margin-left: 15px;
+    }
+}
